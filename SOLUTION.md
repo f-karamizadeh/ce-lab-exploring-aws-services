@@ -1,7 +1,7 @@
 # Exploring AWS Services Lab - Solution
 
-**Student Name:** [Your Name]  
-**Date Completed:** [Date]
+**Student Name:** [Faramarz Karamizadeh]  
+**Date Completed:** [07.07.2026]
 
 ---
 
@@ -57,16 +57,14 @@
 
 ### Completed Service Matrix:
 
-| Category   | Services                                            | Primary Use Case             |
-| ---------- | -----------------------------------------------------------------------------------|
-| Compute    | EC2, Lambda, ECS, EKS, Fargate                      |Running applications          |
-| Storage    | S3, EBS, EFS, S3 Glacier                            | Storing data                 |
-| Database   | RDS, DynamoDB, Aurora, ElastiCache                  | Managing data                |
-| Networking | VPC, Route 53, CloudFront, API Gateway              |  Connecting resources        |
-| Security   | IAM, KMS, Cognito, Secrets Manager                  | Securing resources           |
-| Management | CloudWatch, CloudTrail, Systems Manager, AWS Config | Monitoring & automation      |
-
-
+| Category   | Services                                            | Primary Use Case        |
+| ---------- | --------------------------------------------------- | ----------------------- |
+| Compute    | EC2, Lambda, ECS, EKS, Fargate                      | Running applications    |
+| Storage    | S3, EBS, EFS, S3 Glacier                            | Storing data            |
+| Database   | RDS, DynamoDB, Aurora, ElastiCache                  | Managing data           |
+| Networking | VPC, Route 53, CloudFront, API Gateway              | Connecting resources    |
+| Security   | IAM, KMS, Cognito, Secrets Manager                  | Securing resources      |
+| Management | CloudWatch, CloudTrail, Systems Manager, AWS Config | Monitoring & automation |
 
 ### Research Question Answers:
 
@@ -113,8 +111,8 @@
 ```
 [NAME       : VALUE                    : TYPE             : LOCATION
 profile    : <not set>                : None             : None
-access_key : ****************YT44     : shared-credentials-file : 
-secret_key : ****************kVnO     : shared-credentials-file : 
+access_key : ****************YT44     : shared-credentials-file :
+secret_key : ****************kVnO     : shared-credentials-file :
 region     : eu-north-1               : config-file      : ~/.aws/config]
 ```
 
@@ -144,7 +142,7 @@ See attached `cli-outputs.txt` file for all command outputs.
 **2. S3 Standard Storage:**
 
 - 100 GB monthly cost: $**2.30**
-- Free Tier: First 5 GB  for 20.000 GET, 2000 PUT free per month for 12 months
+- Free Tier: First 5 GB for 20.000 GET, 2000 PUT free per month for 12 months
 - Cost per GB: $**0.0230**
 
 **3. RDS db.t3.micro (MySQL):**
@@ -216,13 +214,16 @@ See attached `cli-outputs.txt` file for all command outputs.
 - Number of AZs: **3**
 
 Command: aws ec2 describe-availability-zones --region eu-central-1 --query "AvailabilityZones[*].ZoneName" --output table
----------------------------                                                                                                                                              
+
+---
+
 |DescribeAvailabilityZones|
 +-------------------------+
-|  eu-central-1a          |
-|  eu-central-1b          |
-|  eu-central-1c          |
+| eu-central-1a |
+| eu-central-1b |
+| eu-central-1c |
 +-------------------------+
+
 ### Concept Questions:
 
 **What is the difference between a Region and an Availability Zone?**
@@ -251,13 +252,13 @@ Deploying resources across multiple regions simultaneously is a standard pattern
 
 ### Region Selection Analysis:
 
-| Scenario                               | Best Region | Reasoning        |
-| -------------------------------------- | ----------- | ---------------- |
-| Serving users primarily in Europe      | eu-west-1 (Ireland), eu-central-1 (Frankfurt)    | Lowest latency for European users; excellent fiber network distribution. |
-| Lowest cost for non-critical workloads | us-east-1 (N. Virginia), us-west-2 (Oregon)   | Massive economies of scale and favorable local tax structures mean the lowest baseline AWS pricing. |
-| GDPR compliance required               | eu-central-1 (Frankfurt), eu-west-3 (Paris)    | Guarantees all data physical residency strictly within the EU borders. |
-| Serving users in Asia-Pacific          | ap-southeast-1 (Singapore), ap-northeast-1 (Tokyo)    | Direct routing via major regional subsea cable systems to reduce end-user latency. |
-| Need newest AWS services               | us-east-1 (N. Virginia)    | AWS's primary launchpad; receives all bleeding-edge features and next-gen hardware first. |
+| Scenario                               | Best Region                                        | Reasoning                                                                                           |
+| -------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Serving users primarily in Europe      | eu-west-1 (Ireland), eu-central-1 (Frankfurt)      | Lowest latency for European users; excellent fiber network distribution.                            |
+| Lowest cost for non-critical workloads | us-east-1 (N. Virginia), us-west-2 (Oregon)        | Massive economies of scale and favorable local tax structures mean the lowest baseline AWS pricing. |
+| GDPR compliance required               | eu-central-1 (Frankfurt), eu-west-3 (Paris)        | Guarantees all data physical residency strictly within the EU borders.                              |
+| Serving users in Asia-Pacific          | ap-southeast-1 (Singapore), ap-northeast-1 (Tokyo) | Direct routing via major regional subsea cable systems to reduce end-user latency.                  |
+| Need newest AWS services               | us-east-1 (N. Virginia)                            | AWS's primary launchpad; receives all bleeding-edge features and next-gen hardware first.           |
 
 ---
 
@@ -311,8 +312,7 @@ I’m very excited about AWS Fargate and advanced ECS/EKS configurations. Moving
 
 **How comfortable do you feel navigating the AWS Console now?**
 
-Scale 1-10 : 8, It's easy with the search bar, but I still need more practice.
----
+## Scale 1-10 : 8, It's easy with the search bar, but I still need more practice.
 
 ## Checklist
 
@@ -328,5 +328,5 @@ Scale 1-10 : 8, It's easy with the search bar, but I still need more practice.
 
 ---
 
-**Completed By:** [Your Name]  
-**Date:** [Date]
+**Completed By:** [Faramarz Karamizadeh]  
+**Date:** [07.07.2026]
