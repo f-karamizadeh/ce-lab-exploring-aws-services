@@ -8,7 +8,7 @@
 ```
 $ aws --version
 
-[Paste your output here]
+[aws-cli/2.34.60 Python/3.14.5 Windows/11 exe/ARM64]
 ```
 
 ---
@@ -17,7 +17,11 @@ $ aws --version
 ```
 $ aws configure list
 
-[Paste your output here]
+[NAME       : VALUE                    : TYPE             : LOCATION
+profile    : <not set>                : None             : None
+access_key : ****************YT44     : shared-credentials-file : 
+secret_key : ****************kVnO     : shared-credentials-file : 
+region     : eu-north-1               : config-file      : ~/.aws/config]
 ```
 
 ---
@@ -26,7 +30,11 @@ $ aws configure list
 ```
 $ aws sts get-caller-identity
 
-[Paste your output here]
+[{                                                                                                                                                                        
+    "UserId": "AIDAS7CA3GYETARUZV4JC",
+    "Account": "204146947593",
+    "Arn": "arn:aws:iam::204146947593:user/fara"
+}]
 ```
 
 ---
@@ -35,7 +43,179 @@ $ aws sts get-caller-identity
 ```
 $ aws ec2 describe-regions --output table
 
-[Paste your output here]
+[-------------------------------------------------------                                                                                                                  
+|                   DescribeRegions                   |
++-----------------------------------------------------+
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.ap-south-1.amazonaws.com     ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  ap-south-1                       ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+----------------------+--------------------------+||
+|||  Name                |  India                   |||
+||+----------------------+--------------------------+||                                                                                                                  
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.eu-north-1.amazonaws.com     ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  eu-north-1                       ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------------------+---------------------------+||
+|||  Name               |  Sweden                   |||
+||+---------------------+---------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.eu-west-3.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  eu-west-3                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------------------+---------------------------+||                                                                                                                  
+|||  Name               |  France                   |||
+||+---------------------+---------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.eu-west-2.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  eu-west-2                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+--------------+----------------------------------+||
+|||  Name        |  United Kingdom                  |||
+||+--------------+----------------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.eu-west-1.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  eu-west-1                        ||
+|+---------------+-----------------------------------+|                                                                                                                  
+|||                    Geography                    |||
+||+-------------------+-----------------------------+||
+|||  Name             |  Ireland                    |||
+||+-------------------+-----------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.ap-northeast-3.amazonaws.com  ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  ap-northeast-3                    ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+----------------------+--------------------------+||
+|||  Name                |  Japan                   |||
+||+----------------------+--------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.ap-northeast-2.amazonaws.com  ||
+||  OptInStatus |  opt-in-not-required               ||                                                                                                                  
+||  RegionName  |  ap-northeast-2                    ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+----------------+--------------------------------+||
+|||  Name          |  South Korea                   |||
+||+----------------+--------------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.ap-northeast-1.amazonaws.com  ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  ap-northeast-1                    ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+----------------------+--------------------------+||
+|||  Name                |  Japan                   |||
+||+----------------------+--------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|                                                                                                                  
+||  Endpoint    |  ec2.ca-central-1.amazonaws.com    ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  ca-central-1                      ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+---------------------+---------------------------+||
+|||  Name               |  Canada                   |||
+||+---------------------+---------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.sa-east-1.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  sa-east-1                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------------------+---------------------------+||
+|||  Name               |  Brazil                   |||
+||+---------------------+---------------------------+||                                                                                                                  
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.ap-southeast-1.amazonaws.com  ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  ap-southeast-1                    ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+-----------------+-------------------------------+||
+|||  Name           |  Singapore                    |||
+||+-----------------+-------------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.ap-southeast-2.amazonaws.com  ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  ap-southeast-2                    ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+-----------------+-------------------------------+||                                                                                                                  
+|||  Name           |  Australia                    |||
+||+-----------------+-------------------------------+||
+||                      Regions                      ||
+|+--------------+------------------------------------+|
+||  Endpoint    |  ec2.eu-central-1.amazonaws.com    ||
+||  OptInStatus |  opt-in-not-required               ||
+||  RegionName  |  eu-central-1                      ||
+|+--------------+------------------------------------+|
+|||                    Geography                    |||
+||+-------------------+-----------------------------+||
+|||  Name             |  Germany                    |||
+||+-------------------+-----------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.us-east-1.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  us-east-1                        ||
+|+---------------+-----------------------------------+|                                                                                                                  
+|||                    Geography                    |||
+||+---------+---------------------------------------+||
+|||  Name   |  United States of America             |||
+||+---------+---------------------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.us-east-2.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  us-east-2                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------+---------------------------------------+||
+|||  Name   |  United States of America             |||
+||+---------+---------------------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.us-west-1.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||                                                                                                                  
+||  RegionName   |  us-west-1                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------+---------------------------------------+||
+|||  Name   |  United States of America             |||
+||+---------+---------------------------------------+||
+||                      Regions                      ||
+|+---------------+-----------------------------------+|
+||  Endpoint     |  ec2.us-west-2.amazonaws.com      ||
+||  OptInStatus  |  opt-in-not-required              ||
+||  RegionName   |  us-west-2                        ||
+|+---------------+-----------------------------------+|
+|||                    Geography                    |||
+||+---------+---------------------------------------+||
+|||  Name   |  United States of America             |||
+||+---------+---------------------------------------+||]
 ```
 
 ---
@@ -44,7 +224,7 @@ $ aws ec2 describe-regions --output table
 ```
 $ aws configure get region
 
-[Paste your output here]
+[eu-north-1]
 ```
 
 ---
@@ -53,7 +233,7 @@ $ aws configure get region
 ```
 $ aws s3 ls
 
-[Paste your output here]
+[0]
 ```
 
 ---
@@ -62,7 +242,17 @@ $ aws s3 ls
 ```
 $ aws ec2 describe-instance-types --query 'InstanceTypes[?contains(InstanceType, `t2`) || contains(InstanceType, `t3`)].InstanceType' --output table
 
-[Paste your output here]
+[-----------------------                                                                                                                                                  
+|DescribeInstanceTypes|
++---------------------+
+|  t3.2xlarge         |
+|  t3.xlarge          |
+|  t3.large           |
+|  t3.medium          |
+|  t3.nano            |
+|  t3.micro           |
+|  t3.small           |
++---------------------+]
 ```
 
 ---
@@ -71,7 +261,44 @@ $ aws ec2 describe-instance-types --query 'InstanceTypes[?contains(InstanceType,
 ```
 $ aws iam get-account-summary
 
-[Paste your output here]
+[{                                                                                                                                                                        
+    "SummaryMap": {
+        "GroupPolicySizeQuota": 5120,
+        "InstanceProfilesQuota": 1000,
+        "Policies": 0,
+        "GroupsPerUserQuota": 10,
+        "InstanceProfiles": 1,
+        "AttachedPoliciesPerUserQuota": 10,
+        "Users": 1,
+        "PoliciesQuota": 1500,
+        "Providers": 0,
+        "AccountMFAEnabled": 1,
+        "AccessKeysPerUserQuota": 2,
+        "AssumeRolePolicySizeQuota": 2048,
+        "PolicyVersionsInUseQuota": 10000,
+        "GlobalEndpointTokenVersion": 1,
+        "VersionsPerPolicyQuota": 5,
+        "AttachedPoliciesPerGroupQuota": 10,
+        "PolicySizeQuota": 6144,                                                                                                                                         
+        "Groups": 1,
+        "AccountSigningCertificatesPresent": 0,
+        "UsersQuota": 5000,
+        "ServerCertificatesQuota": 20,
+        "MFADevices": 3,
+        "UserPolicySizeQuota": 2048,
+        "PolicyVersionsInUse": 8,
+        "ServerCertificates": 0,
+        "Roles": 4,
+        "RolesQuota": 1000,
+        "SigningCertificatesPerUserQuota": 2,
+        "MFADevicesInUse": 2,
+        "RolePolicySizeQuota": 10240,
+        "AttachedPoliciesPerRoleQuota": 10,
+        "AccountAccessKeysPresent": 0,
+        "AccountPasswordPresent": 1,
+        "GroupsQuota": 300
+    }                                                                                                                                                                    
+}]
 ```
 
 ---
